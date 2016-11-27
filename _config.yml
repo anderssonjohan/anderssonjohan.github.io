@@ -1,0 +1,36 @@
+# Site settings
+title: Johan Andersson
+email: johan@andersson.net
+url: http://johan.andersson.net
+description: "Johan Andersson, senior dotnet dev, web tech and infrastructure"
+skills: "senior dotnet dev, web tech and infrastructure"
+meta_author: Andersson Johan
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 95cdef
+  primary-rgb: "149,205,239"
+  secondary: 2c3e50
+  secondary-dark: 233140
+
+# Footer settings
+footer:
+  social: Contact
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/anderssonjohan
+  - title: github
+    url: http://github.com/anderssonjohan
+  - title: linkedin
+    url: https://se.linkedin.com/in/jandersson
+  - title: envelope
+    url: mailto:johan@andersson.net
+
+# Credits content
+credits: 'Freelancer open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty

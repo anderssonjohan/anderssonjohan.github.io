@@ -1,0 +1,135 @@
+ <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>RemoteX 2006-</h4>
+                    <h4>2016</h4>
+                    <p>
+                    <ul>
+                    <li> A new <a href="https://personalliggare.remotex.net/">clock-in/out application</a> was to be built required by a new swedish law. The team saw this as a perfect opportunity to experiement with
+                    the new ASP.Net vNext (now ASP.Net/dotnet core).
+                    As a Mac/macOS user since 2011 I was looking forward to be able to code .net/c# without having to start Windows using Parallels Desktop.
+                    The product used ASP.Net vNext Web API, Entity Framework, SQL Server and our default web frontend stack using Brunch.io, Bootstrap, Knockout.js, Sammy.js and KarmaJS for unit testing. Web tests were conducted using Selenium WebDriver were also written in c# and xUnit.
+                    <li> Additionally I took the ACR122U NFC reader for a test drive using web proxy that was using libnfc through <a href="https://www.npmjs.com/package/nfc">NodeJS</a> to build a <a href="https://www.youtube.com/watch?v=9SioZ7L1pa4">"clock in/out kiosk"</a>.
+                    <li> <a href="https://github.com/OpenCover/opencover">OpenCover</a> was added to our build pipeline to measure and display test coverage also for our .Net projects.
+                    <li> I introduced common application logging and metrics using NLog, NXLog, Logstash and Kibana.
+                    <li> Further on, I worked on several refactorings of the API product to enable cloud support and containerization.
+                    <li> Using Azure and Docker, I built a testing environment for a new reverse proxy based on Nginx that was replacing the old solution using IIS+ARR
+                    </ul>
+                    </p>
+                    <h4>2014-2015</h4>
+                    <p>
+                    <a href="https://github.com/Shopify/dashing">Shopify Dashing</a> was added and I created <a href="https://github.com/remotex/remotex-rpi">some scripts</a> to bootstrap a set of Raspberry PI computers to work as operations monitors covering everything from build status of Jenkins CI jobs
+                    to near real time metrics sourced from Elasticsearch, Logstash and NewRelic.
+                    As a part of the delivery pipeline we added web tests using <a href="https://en.wikipedia.org/wiki/Selenium_(software)#Selenium_WebDriver">Selenium WebDriver</a> that helped us to improve the overall end-user quality of the product.
+                    Together with tools like JSHint we could now automatically know when our builds failed due to a change in our Javascripts or CSS, thanks to
+                    integrating the tools to the continuous delivery pipeline.
+                    We started using Jekyll and Azure Blob Storage for our product manuals, thus got me involved in using the <a href="https://github.com/jenkinsci/windows-azure-storage-plugin">Windows Azure storage plugin</a> for Jenkins.
+                    I updated our server bootstrapping scripts so they could deploy to virtual machines on Azure which enabled us as a team to start using Windows Azure as a development and testing environment.
+                    Implemented a packaging format used to formalize and automate the deployments of all system integrations in an environment where current tools
+                    like MSDeploy did not fit in and no usable alternative was present. This was used in large project with the goal to move away from all own
+                    hardware hosted by RemoteX and enabled all system integrations to be deployed by a build pipeline instead of using xcopy deployments.
+                    By carefully planning the migration along with the deprecation of all own managed co-location services, I was able to cut the monthly cost of operations by a significant amount. Thus, this was one of the bigger steps of my continuous effort in optimizing the cost of operations for RemoteX.
+                    </p>
+                    <h4>2013</h4>
+                    <p>
+                    As a team we shifted focus towards more applications that used our frontend-stack using Bootstrap, Knockout.js, Sammy.js to build single-page applications. <a href="http://brunch.io">Brunch.io</a> was added to the toolchain to leverage templating/scaffolding which enabled us as
+                    a team to maintain a shared code style and to do test-driven development in Javascript.
+                    A colleague introduced an <a href="https://github.com/remotex/heartrate-monitor">open-source service health checking</a> tool to the team from which I learned about Google AppEngine and Python. It was used to monitor many of the scheduled jobs used by the integrations hosted by RemoteX.
+                    I introduced a central logging infrastructure using Elasticsearch, Logstash, Kibana and Graphite as a support and troubleshooting tools with easy access to system and web logs. As a part of web operations and product development we conduct load and performance tests on regular basis
+                    using tools like NewRelic, SQL Profiler and ApacheBench.
+                    </p>
+                    <h4>2012-2013</h4>
+                    <p>
+                    I co-managed and implemented several system integration projects at two of the larger customers. Most work involved API specifications and
+                    endpoints on behalf of RemoteX to integrate with legacy systems/environments using flat files and Biztalk.
+                    The web tech of the year was building single-page applications using Bootstrap 2 and Knockout.js which was used to build a frontend for a
+                    new module targeting use-cases in the accounting domain.
+                    I took part in migrating the click-once deployed client, targeting Windows computers, towards a new code base that were rewritten from
+                    scratch using Windows Presentation Foundation (WPF) and Telerik RadControls for WPF. It purpose was to replace the old client application that had been a hybrid using both Windows Forms and WPF since 2008.
+                    </p>
+                    <h4>2012</h4>
+                    <p>
+                    In the beginning of <strong>2012</strong>, I was responsible of setting up RemoteX managed hosting services at a new provider.
+                    This time we moved the product SaaS environment from virtual machines running IIS and SQL Server to virtual machines and a high availability SQL cluster.
+                    Once again I was scripting the generation of BIND zone files, a part of the solution that managed us to move several hundreds of tenants
+                    in a fully automated process from one managed hosting partner to another.
+                    As a part of this process I used Powershell and WinRM to automate the bootstrapping of all our servers. The bootstrapping process took care of
+                    all pre-requisites required by the product such as installing IIS, .Net Framework and configuration of the reverse proxy (Application Request Routing).
+                    This grunt work made us capable of doing enterprise on-premise deployments with the same level of automation as we were capable of at our own managed hosting provider. At the end of the year this was capability was tested with a successful deployment at one of the larger customers which managed its own IT department and hosting facilities.
+                    </p>
+                    <h4>2009-2011</h4>
+                    <p>
+                    The product grew and in <strong>2009</strong> I was responsible for adding automated builds and tests for one of our larger integrations to <a href="https://sv.wikipedia.org/wiki/Visma_Spcs">Visma SPCS Administration</a>.
+                    The new iPhone became present also in our customers hands and our focus began to shift towards Android and iOS in <strong>2010</strong>.
+                    The development environment using TFS was getting old and the team was more than happy when it in <strong>2011</strong> was replaced by hosted services like <a href="http://github.com">GitHub</a>, <a href="http://pivotaltracker.com">Pivotal Tracker</a> and a continuous-delivery pipeline using <a href="http://jenkins-ci.org">Jenkins CI</a>.
+                    On the hosting side of this story, we moved the product from our own hardware in a co-location to managed hosting.
+                    At this point we had quite many tenants using the product, now also offered as a enterprise on-premise installation. This led us to automate many
+                    tedious steps of the setup of the system. The previously manual steps described in a 50+ pages document were replaced by an automated pipeline
+                    where new environments were up and running in 5 minutes. The team expanded its use of Jenkins CI and used it together with Powershell scripting
+                    and WinRM.
+                    </p>
+                    <h4>2008</h4>
+                    <p>
+                    I was getting back in the server room in <strong>2008</strong> to make sure the hosting environment for the product held together and
+                    was responsible of moving a co-location site used by the company. Alot of work was planning, designing and scripting VMWare Infrastructure,
+                    but also involved installation of datacenter equipment, site VPN-links etc. at the co-location partner.
+                    </p>
+                    <h4>2007-2008</h4>
+                    <p>
+                    <strong>2007</strong> came around and my initial assignment at RemoteX changed to re-build the product from scratch as a SaaS offering.
+                    The team delivered a whole new product with .Net, now on v3.5, with APIs using REST that shared code with clients on Windows Mobile 6 and Windows 7. The product used <a href="https://en.wikipedia.org/wiki/ClickOnce">ClickOnce deployment</a> for its "occasionally connected client"
+                    and all applications was developed using concepts and methodologies such as Dependency Injection containers and Test Driven Development.
+                    (things that were quite rare in .Net-land at the time)
+                    </p>
+                    <h4>2005-2006</h4>
+                    <p>
+                    It was late <strong>2005</strong> and I was given an opportunity to build the next generation web apis for a small ISV working on
+                    workforce management solutions using PocketPC and eVB. Said and done, I quit the consultant firm and was contracted by <a href="http://www.remotex.se">RemoteX Technologies</a> to start working on RESTful APIs using Microsoft Avalon (now WCF) in <strong>2006</strong>.
+                    Having worked with <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a> and <a href="https://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe">Visual SourceSafe</a> before, the focus was now automating builds using <a href="https://en.wikipedia.org/wiki/Team_Foundation_Server">Microsoft TFS</a>.
+                    </p>
+                    <h4>Qbranch 2000-2005</h4>
+                    <h4>2004-2005</h4>
+                    <p>
+                    I was entitled <em>Microsoft Certified Solutions Developer</em> in <strong>2004</strong> and was working with one of the larger swedish banks.
+                    Together with a fellow collegue from Qbranch I developed a web frontend system for a distributed deployment system for the Windows XP operating
+                    system using <a href="https://en.wikipedia.org/wiki/PowerQuest">PowerQuest tools</a> to build and apply images, driver packages and perform
+                    BIOS upgrades remotely in an environment with 20 000+ clients.
+                    </p>
+                    <h4>2001-2003</h4>
+                    <p>
+                    The year was <strong>2001</strong> and I was thought that <em>"Change is the only constant"</em> and my LAMP-stack was more and more often
+                    VB6 and ASP. Web tech of the year became Microsoft.Net in a large project that I was participating in and extended my expertise from
+                    web tech to COM+, Windows Services and messaging solutions leveraging MSMQ.
+                    </p>
+                    <h4>1999-2000</h4>
+                    <p>
+                    I was just about to enter my twenties in spring of <strong>2000</strong> when I joined <a href="http://www.axians.se/">Qbranch (nowadays called Axians)</a> where I was
+                    privileged to continue my endeavor in web tech, mostly using FreeBSD/Apache/MySQL/PHP, as a consultant.
+                    (Srsly, I was basically living in my <a href="https://en.wikipedia.org/wiki/GNU_Screen">GNU Screen</a>, which I still use even in 2016)
+                    </p>
+                    <h4>EuroSeek 1997-2000</h4>
+                    <h4>1997-1998</h4>
+                    <p>
+                    The web agency was split up in two parts and FreeSide became <a href="http://www.euroseek.com/about/19">EuroSeek</a>.
+                    During <strong>1997</strong> the web tech choice-of-the-year became Windows NT, SQL server and PHP3.
+                    This was later on replaced with Sun Solaris, PHP and Oracle when dot-com and VC money was a fact.
+                    In <strong>1998</strong> I was experimenting with web hosting automation and created tools for generation of bind zone files, apache configurations and e-mail accounts as a side-business in addition to working on the web portals at EuroSeek.
+                    </p>
+                    <h4>School years</h4>
+                    <h4>1994-1996</h4>
+                    <p>
+                    I continued hacking web pages, for fun, and profit during several internships at FreeSide, and learned all shortcuts worth to know in Adobe Photoshop and ramped up my programming skills using a brand new technology called <a href="https://en.wikipedia.org/wiki/Adobe_ColdFusion">ColdFusion from Allaire (now Adobe)</a>.
+                    The year was <strong>1996</strong> and suddenly I was 'full-stack dev', creating database driven web sites with MS Access and cranking out CSS and HTML.
+                    </p>
+                    <h4>1987-1993</h4>
+                    <p>
+                    Aged 7, my interest of technology and electronics came along in the late eighties when my father bought a state-of-the-art 286 PC.
+                    This was the start of my fascination of creating and modifying computer software.
+                    I few years later in <strong>1992</strong>, aged 12, I hosted my own <a href="https://en.wikipedia.org/wiki/RemoteAccess">RemoteAccess BBS</a> and one year later I started hacking HTML with <a href="https://en.wikipedia.org/wiki/Netscape_Navigator_2">Netscape Navigator 2</a> during an intenship at FreeSide Web Development agency in Stockholm, Sweden.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
