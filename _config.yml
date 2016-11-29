@@ -27,6 +27,8 @@ social:
     url: https://se.linkedin.com/in/jandersson
   - title: envelope
     url: mailto:johan@andersson.net
+  - title: wordpress
+    url: https://anderssonjohan.wordpress.com
 
 # Credits content
 credits: 'Freelancer open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
