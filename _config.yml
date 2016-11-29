@@ -19,12 +19,14 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: linkedin
+    url: https://se.linkedin.com/in/jandersson
   - title: twitter
     url: http://twitter.com/anderssonjohan
   - title: github
     url: http://github.com/anderssonjohan
-  - title: linkedin
-    url: https://se.linkedin.com/in/jandersson
+  - title: lock
+    url: https://keybase.io/anderssonjohan
   - title: envelope
     url: mailto:johan@andersson.net
   - title: wordpress
