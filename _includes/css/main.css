@@ -42,7 +42,8 @@ h4 {
 }
 
 hr.star-light,
-hr.star-primary {
+hr.star-primary,
+hr.primary {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -71,7 +72,7 @@ hr.star-light:after {
     background-color: #{{ site.color.primary }};
 }
 
-hr.star-primary {
+hr.star-primary, hr.primary {
     border-color: #{{ site.color.secondary }};
 }
 
@@ -458,4 +459,9 @@ footer .footer-below {
 .modal.fade.in {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+}
+
+#about {
+  background-color: #fff;
+  color: #233140
 }
